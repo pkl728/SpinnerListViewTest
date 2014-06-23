@@ -6,11 +6,9 @@
 namespace SpinnerListViewTest.Droid
 {
     using Android.Content;
-    using Cirrious.CrossCore;
+
     using Cirrious.MvvmCross.Droid.Platform;
     using Cirrious.MvvmCross.ViewModels;
-    using SpinnerListViewTest.Core.Services;
-    using SpinnerListViewTest.Droid.Services;
 
     /// <summary>
     ///    Defines the Setup type.

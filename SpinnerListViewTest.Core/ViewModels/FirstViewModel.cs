@@ -1,8 +1,6 @@
-using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using SpinnerListViewTest.Core.Entities;
-using SpinnerListViewTest.Core.Services;
-using SpinnerListViewTest.Core.ViewModels.Helpers;
+
 using System.Collections.Generic;
 // --------------------------------------------------------------------------------------------------------------------
 // <summary>
@@ -43,12 +41,10 @@ namespace SpinnerListViewTest.Core.ViewModels
             base.Start();
             Items = new List<Item>();
             for (var j = 0; j < 20; j++){
-                var item = new Item();
-                item.Description = "Item #" + j;
+                var item = new Item { Description = "Item #" + j };
                 var itemValues = new List<ItemValue>();
                 for (var i = 0; i < 5; i++) {
-                    var itemValue = new ItemValue();
-                    itemValue.Value = "Option " + i;
+                    var itemValue = new ItemValue { Value = "Option " + i };
                     itemValues.Add(itemValue);
                 }
                 item.Values = itemValues;

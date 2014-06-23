@@ -1,20 +1,17 @@
-﻿using Cirrious.CrossCore.Core;
-using Cirrious.MvvmCross.ViewModels;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace SpinnerListViewTest.Core.Entities
 {
     public class Item
     {
+        public Item()
+        {
+            Value = new ItemValue { Value = "[Choose value]" };
+        }
+
         public string Description { get; set; }
 
-        public string Value { get; set; }
+        public ItemValue Value { get; set; }
 
         public string Comment { get; set; }
 

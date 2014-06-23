@@ -127,11 +127,8 @@ namespace SpinnerListViewTest.Droid
 			// aapt resource value: 0x7f050000
 			public const int MvxBindingTagUnique = 2131034112;
 			
-			// aapt resource value: 0x7f050009
-			public const int bottomLayout = 2131034121;
-			
 			// aapt resource value: 0x7f050008
-			public const int comments = 2131034120;
+			public const int bottomLayout = 2131034120;
 			
 			// aapt resource value: 0x7f050007
 			public const int description = 2131034119;
